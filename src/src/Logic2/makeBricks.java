@@ -18,7 +18,7 @@ makeBricks(3, 2, 10) → true
         System.out.println(makeBricks.makeBricks(3, 2, 10));
     }
 
-    public boolean makeBricks(int small, int big, int goal){
+    public boolean makeBricks(int small, int big, int goal) {
 //        //   8  / 5 >=  1
 //        if (goal / 5 >= big){
 //            if (goal <= small + big*5){
@@ -32,11 +32,13 @@ makeBricks(3, 2, 10) → true
 //        }
 //        return false;
 
-
-        if (goal > small + big * 5){
+        if (goal > small + big * 5) {
             return false;
         }
         int smallBricks = goal % 5;
         return smallBricks <= small;
     }
 }
+
+
+
